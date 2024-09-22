@@ -5,12 +5,15 @@ app.get("/getweather", (req, res) => {
     const location = req.query.location;
     let temp, conditions;
 
-    if (location == "New Orleans") {
-        temp = 99;
-        conditions = "hot and humid";
-    } else if (location == "Seattle") {
-        temp = 40;
-        conditions = "rainy and overcast";
+    if (location == "Tokyo") {
+        temp = 10;
+        conditions = "2023-12-31";
+    } else if (location == "Tokyo Intl") {
+        temp = 10.7;
+        conditions = "2023-12-31";
+    } else if (location == "Tokyo Heliport") {
+        temp = 10.2;
+        conditions = "2023-12-31";
     } else {
         res.status(400).send("there is no data for the requested location");
     }

@@ -75,7 +75,7 @@ app.listen(port, async () => {
 });
 
 const axios = require("axios");
-const baseUrl = "https://weather-wjgwi4dszq-uc.a.run.app/";
+const baseUrl = "https://weatherservice-wjgwi4dszq-uc.a.run.app";
 
 app.ws("/sendMessage", async function (ws, req) {
 
