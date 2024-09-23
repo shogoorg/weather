@@ -39,12 +39,12 @@ const functionDeclarations = [
                         degrees: {
                             type: FunctionDeclarationSchemaType.NUMBER,
                             "description":
-                                "current temperature in fahrenheit"
+                                "temperature in fahrenheit"
                         },
                         conditions: {
                             type: FunctionDeclarationSchemaType.STRING,
                             "description":
-                                "how the weather feels subjectively"
+                                "When is the weather"
                         }
                     },
                     required: ["location"]
